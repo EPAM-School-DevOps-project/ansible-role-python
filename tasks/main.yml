@@ -1,0 +1,6 @@
+    - name: Install all required dependencies
+      yum: name={{ item }} state=installed
+      loop:
+        - python
+        - python-pip
+        - MySQL-python
