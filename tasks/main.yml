@@ -2,5 +2,5 @@
       yum: name={{ item }} state=installed
       loop:
         - python
-        - python3-pip
+        - python-pip
         - MySQL-python
