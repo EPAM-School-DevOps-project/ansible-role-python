@@ -1,7 +1,5 @@
     - name: Install all required dependencies
-      yum: name={{ item }}
-      state: present
-      update_cache: yes
+      yum: name={{ item }} state=installed update_cache=yes
       loop:
         - python
         - python-pip
